@@ -16,8 +16,21 @@
         console.log(position) 
         let lat = position.coords.latitude;
         let log = position.coords.longitude;
+        //how to post to the DOM
         document.getElementById("lat").textContent = lat;
         document.getElementById("log").textContent = log;
+        //an object to hold the values
+        const data = { lat, log };
+        //makes an object that will get specific things from the fetch
+        const options = {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+            // when sending data it's important to use a header
+          },
+          body: JSON.stringify(data)
+        };
+        fetch('/api', options);
       });
     } else {
       console.log('geolocation not available');

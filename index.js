@@ -7,3 +7,7 @@ const app = express();
 app.listen(3000, () => console.log('listening at 3000'));
 //tells the server to go to the public folder-default is to index.html
 app.use(express.static('public'));
+//address that we will recieve the post, next is the call back function 
+app.post('/api', (request, response) => {
+  console.log(request);
+})

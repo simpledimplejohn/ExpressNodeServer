@@ -1,0 +1,22 @@
+{
+  "name": "expresspractice",
+  "version": "1.0.0",
+  "description": "\"practice setting up express server\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/simpledimplejohn/ExpressNodeServer.git"
+  },
+  "author": "John Blalock",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simpledimplejohn/ExpressNodeServer/issues"
+  },
+  "homepage": "https://github.com/simpledimplejohn/ExpressNodeServer#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

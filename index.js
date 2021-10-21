@@ -22,11 +22,13 @@ database.insert({name: "potato", color: "brown", eyes: 3, cooked: false});
 //address that we will recieve the post, next is the call back function 
 app.post('/api', (request, response) => {
   console.log("I got a request!");
-  
   //you always need a response after your request send afterwards
   //use .then to handle the promise that fetch returns
   const data = request.body;
-  database.push(data); 
+  const timestamp = Date.now();
+  data.timestamp = timestamp;
+  
+  database.insert(data); 
   console.log("the data is :", data);
   console.log("the database is", database);
 

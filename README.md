@@ -3,12 +3,13 @@
 ### __Description__
 This is my first server, a very simple bare bones setup that I can reference later when setting up other servers or if I need something quick.
 
-### __Installation Instructions__
+### __Building This From Scratch__
 To set up Express from scratch do the following:
 1. Create a root folder and navigate into it.
 2. Run `npm init`
 3. Run `npm install express`
 4. Create a .gitignore file with `node_modules` in it
+5. Run `npm install nedb` to install the database
 
 ### __Run instructions__
 

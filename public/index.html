@@ -30,8 +30,9 @@
           },
           body: JSON.stringify(data)
         };
-        //call fetch with the options request-- use .then to handle a response to the server for after
+        //call fetch with the options 
         const response = await fetch('/api', options);
+        // call response to send somethign back to the server--this will be viewed on the webpage
         const json = await response.json();
         console.log("the response",json);
       });
